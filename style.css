@@ -54,6 +54,21 @@ main {
 }
 
 /* portfolio styles */
+body {
+  background-color: blue;
+}
+div {
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+.myClass {
+  background-color: rgb(255, 149, 0);
+}
+#myId {
+  background-color: red;
+}
 #interests {
     border: 4px #c6d614 ridge;
     padding: 8px;
@@ -134,4 +149,9 @@ h2, h3 {
                           align-content: center;
                           justify-content: center;
                         }
+                    }
+
+
+                    body {
+                      background-color: blue;
                     }

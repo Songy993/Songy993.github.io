@@ -44,7 +44,9 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
-    createPlatform(200, 300, 200, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(200, 300, 129, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(200, 300, 235, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(200, 300, 300, 20); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
 
     
     // TODO 2
@@ -64,6 +66,8 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon("left", 300, 1000); // cannon on left wall, 600px down, shooting once per second
+    createCannon("left", 500, 800); // cannon on right wall, 600px down, shooting once per second
+    createCannon("right", 200, 800); // cannon on left wall, 600px down, shooting once per second
 
 
     /////////////////////////////////////////////////
