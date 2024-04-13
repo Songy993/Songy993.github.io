@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 200px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -62,7 +62,27 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = 0;
+			var points = 0;
+			var speed = 10;
+				// during update... 
+				// Frame 1
+				positionX = 0 + 10;         // positionX = 10
+				moveBoxTo(positionX);
+
+				// Frame 2
+				positionX = 10 + 10;         // positionX = 20
+				moveBoxTo(positionX);
+
+				// Frame 3
+				positionX = 20 + 10;         // positionX = 30
+				moveBoxTo(positionX);
+
+				// Frame 4
+				positionX = 30 + 10;         // positionX = 40
+				moveBoxTo(positionX);
+
+				// so on...
 
 			
 			/* 
@@ -71,9 +91,20 @@
 			turn it around! 
 			*/
 			function update() {
-				
+				    /* Your Code to Increase positionX by 10 HERE */
+					positionX = positionX + 10;
+				moveBoxTo(positionX);
+				if (conditionIsTrue) {
+     // then do X, Y, and Z
+					speed = -speed;
+					speed *= -1;
+					speed = speed * -1;
+}
+			}
 
-			};
+			
+
+			
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -81,7 +112,11 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionX = 0;
+				positionX = positionX + speed;
+				speed += 3;
+				points = points + 1;
+				changeBoxText(points);
 
 
 			};
